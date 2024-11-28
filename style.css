@@ -1,20 +1,20 @@
 @font-face {
     font-family:"TTLakes" ;
-    src: url("/assets/fonts/TTLakes/TTLakes-Bold.ttf");
+    src: url("./assets/fonts/TTLakes/TTLakes-Bold.ttf");
     font-weight: bold;
     font-style: normal;
     font-display: swap;
 }
 @font-face {
     font-family:"TTLakes" ;
-    src: url("/assets/fonts/TTLakes/TTLakes-Regular.ttf");
+    src: url("./assets/fonts/TTLakes/TTLakes-Regular.ttf");
     font-weight: 400;
     font-style: normal;
     font-display: swap;
 }
 @font-face {
     font-family:"TTLakes" ;
-    src: url("/assets/fonts/TTLakes/TTLakes-DemiBold.ttf");
+    src: url("./assets/fonts/TTLakes/TTLakes-DemiBold.ttf");
     font-weight: 500;
     font-style: normal;
     font-display: swap;
@@ -193,7 +193,7 @@ body {
 .more-info::before {
     content: '';
     display: block;
-    background-image: url("/assets/expand.svg");
+    background-image: url("./assets/expand.svg");
     width: 24px;
     height: 24px;
 }
