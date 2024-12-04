@@ -29,11 +29,19 @@
 
 input, textarea, button {font-family: 'TTLakes'}
 
+
 body {   
     font-family: 'TTLakes';
     font-weight: 400;
     max-width: 100%;
     width: 100vw;
+}
+
+.width-container {
+    max-width: 1440px;
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .header__icons-container {
@@ -406,4 +414,3 @@ body {
 .sidebar__width-container {
     padding-left: 1em;
 }
-
