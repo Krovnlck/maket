@@ -29,7 +29,7 @@
 
 input, textarea, button {font-family: 'TTLakes'}
 
-body {
+body {   
     font-family: 'TTLakes';
     font-weight: 400;
     max-width: 100%;
@@ -50,15 +50,21 @@ body {
     background-position: center;
     background-repeat: no-repeat;    
 }
-.header__button .icon{
+.button .icon{
     background-color: #FF3E79;
     border-radius: 50%;
     border-color: transparent;
 }
 
-.header__button {
+.button {
     background-color: transparent;
     border-color: transparent;
+    transition: opacity .3s linear;
+    cursor: pointer;
+}
+
+.button:hover {
+    opacity: .5;
 }
 
 
@@ -96,6 +102,13 @@ body {
     background-image: url("./assets/search-ic.svg");
 }
 
+.icon-cross {
+    background-image: url("./assets/cross-ic.svg");
+}
+
+.icon-fast-search {
+    background-image: url("./assets/fast-search-ic.svg");
+}
 
 .header {
     display: flex;
@@ -310,4 +323,87 @@ body {
     }
 }
 
+.sidebar {
+    width: 320px;
+    height: 100vh;
+    box-shadow: 16px 0px 52px #0E185033 ;
+}
+
+.sidebar-top {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: inherit;
+    padding: 1.5em
+}
+
+.sidebar__icons-container {
+ display: flex;
+ gap: 1em;
+ padding-bottom: 1em;
+}
+
+.nav-menu{
+    display: flex;
+    flex-direction: column;
+    gap: 2em;
+}
+
+.nav-menu__list-item{
+    font-weight: 500;
+    display: flex;
+    gap: 1em;
+    line-height: 2;
+}
+
+.active-el {
+    color: #7E7E82;
+}
+
+.nav-menu__list-item::before {
+    content: '';
+    display: block;
+    background-color: transparent;
+    width: 4px;
+    border-radius: 0 4px 4px 0;
+}
+
+.nav-menu__list-item.active-el::before {
+    background-color: #41F6D7;
+}
+
+.sidebar-footer {
+    height: 250px;
+}
+
+.sidebar__wrapper {
+    min-height: 100%;
+    margin-bottom: -250px;
+}
+
+.footer-info {
+    display: flex;
+    flex-direction: column;
+}
+
+.phone-number {
+    font-weight: 600;
+    font-size: 24px;
+    padding-bottom: 2.5em;
+}
+
+
+
+.email {
+    font-weight: bold;
+    padding-bottom: .75em;
+}
+
+.lang {
+    font-weight: 600;
+}
+
+.sidebar__width-container {
+    padding-left: 1em;
+}
 
